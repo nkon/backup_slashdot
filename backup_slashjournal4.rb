@@ -26,7 +26,8 @@ $max_page = 30
 ## see   http://slashdot.jp/comments.pl?sid=544329&cid=2017429
 ## year month date から過去に向かって、数個の日記を検索する。
 ## %%22 => "  %%3a => :
-$list_uri_fmt = "http://srad.jp/index2.pl?fhfilter=%%22author%%3a%s%%22+journal&page=%d"
+## magic code color=black
+$list_uri_fmt = "http://srad.jp/index2.pl?color=blue&fhfilter=%%22author%%3a%s%%22+journal&page=%d"
 
 $regexp_entry = "http://srad.jp/~kondou/journal/\\d+"
 $entry_uri = Hash.new
